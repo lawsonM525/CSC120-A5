@@ -12,19 +12,19 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ### Level 1 (4 pts)
 
-_____ 1 pt: The `Pumpkin` class displays something pumpkin-like
+YES 1 pt: The `Pumpkin` class displays something pumpkin-like
 
-_____ 1 pt: The `Shirt` class dislays something shirt-like
+YES 1 pt: The `Shirt` class dislays something shirt-like
 
-_____ 1 pt: The `Pants` class displays something pants-like
+YES 1 pt: The `Pants` class displays something pants-like
 
-_____ 1 pt: The `Boot` class displays something boot-like
+YES 1 pt: The `Boot` class displays something boot-like
 
 ### Level 2 (3 pts)
 
-_____ 1 pt: The `Scarecrow` class displays something `Scarecrow-like`
+YES 1 pt: The `Scarecrow` class displays something `Scarecrow-like`
 
-_____ 1 pt: The `Scarecrow` uses the classes defined in Level 1 (**Association**) to accomplish its goals
+YES 1 pt: The `Scarecrow` uses the classes defined in Level 1 (**Association**) to accomplish its goals
 
 _____ 1 pt: The `Banner` class displays a decorative Banner
 
