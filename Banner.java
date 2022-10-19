@@ -14,16 +14,53 @@ public class Banner {
         this.message = m;
     }
 
+    public void newMsg(String newText){
+        this.message = newText;
+    }
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀   ****************************
+//             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***
+//             *** ~  -------------------- ~ ***
+//             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***
+//             ********************     ***
+//                                 *******
+//                                   ***
+//                                  ** ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     * Prints Ascii speech bubble commented above with message within it
      */
     public void display() {
-        System.out.println(this.message);
+        System.out.println("               **************************** ");
+        System.out.println("             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***");
+        //System.out.println("             *** ~  -------------------- ~ ***");
+        if (this.message.length() <= 31) {
+            System.out.print("             *");
+            int space =  31 - this.message.length();
+            for (int i = 0; i < space/2; i++ ){
+                System.out.print(" ");
+            }
+            System.out.print(this.message);
+            for (int i = 0; i < space/2; i++ ){
+                System.out.print(" ");
+            }
+            System.out.println("*");
+        }
+        else {
+            System.out.print("             ");
+            System.out.println(this.message);
+        }
+        System.out.println("             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***");
+        System.out.println("             ********************     ***");
+        System.out.println("                                 *******");
+        System.out.println("                                   ***");
+        System.out.println("                                  **");
+        
     }
 
     /* main method (for testing) */
     public static void main(String[] args) {
         Banner myBanner = new Banner("Hello world");
+        myBanner.display();
+        myBanner.newMsg("This test text is longer than 31 characters");
         myBanner.display();
     }
 }
