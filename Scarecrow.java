@@ -27,14 +27,11 @@ class Scarecrow {
         rightFoot = rightBoot;
         sign = speech;
         message = text;
-        speech.newMsg(message);
+        sign.newMsg(message);
         
     }
 
-    /* Displays the Scarecrow 
-     * TODO: call the .display() method of each part... 
-     *       ...in the right order!
-    */
+    /* Displays the Scarecrow */
     public void display() {
         sign.display();
         head.display();
@@ -49,13 +46,13 @@ class Scarecrow {
     /* Main method (for testing) */
     public static void main(String[] args) {
 
-        // TODO: Don't forget to update the line below if you modify the constructor
-        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(),new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner(""), new String("USERINPUT"));
+        
+        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(),new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner(""), new String("Hello!"));
 
         // If a message was passed in on the command line, extract and store it
-        // TODO: in Step 4, you'll pass this value along to your Banner constructor
+        
         if (args.length > 0) {
-            myScarecrow.message = args[0];
+            myScarecrow.sign.newMsg(args[0]);
         }
 
         myScarecrow.display();
