@@ -29,30 +29,44 @@ public class Banner {
      * Prints Ascii speech bubble commented above with message within it
      */
     public void display() {
-        System.out.println("               **************************** ");
-        System.out.println("             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***");
-        //System.out.println("             *** ~  -------------------- ~ ***");
-        if (this.message.length() <= 31) {
-            System.out.print("             *");
-            int space =  31 - this.message.length();
-            for (int i = 0; i < space/2; i++ ){
-                System.out.print(" ");
-            }
-            System.out.print(this.message);
-            for (int i = 0; i < space/2; i++ ){
-                System.out.print(" ");
-            }
-            System.out.println("*");
+        System.out.print("               *");
+        for (int j =0; j < this.message.length(); j++){
+            System.out.print("*");
         }
-        else {
-            System.out.print("             ");
-            System.out.println(this.message);
+        System.out.println("*");
+        System.out.print("             **");
+        for (int j =0; j<(this.message.length()+1); j++){
+            System.out.print("~");
         }
-        System.out.println("             *** ~~~~~~~~~~~~~~~~~~~~~~~~ ***");
-        System.out.println("             ********************     ***");
-        System.out.println("                                 *******");
-        System.out.println("                                   ***");
-        System.out.println("                                  **");
+        System.out.println("**");
+        System.out.print("             *  ");
+        System.out.print(this.message);
+        System.out.println("  *");
+        System.out.print("             **");
+        for (int j =0; j<(this.message.length()+1); j++){
+            System.out.print("~");
+        }
+        System.out.println("**");
+        System.out.print("               *");
+        for (int j =0; j < this.message.length(); j++){
+            System.out.print("*");
+        }
+        System.out.println("*");
+        System.out.print("              ");
+        for (int j=0; j<(this.message.length()-5); j++){
+            System.out.print(" ");
+        }
+        System.out.println("*****");
+        System.out.print("              ");
+        for (int j=0; j<(this.message.length()-4); j++){
+            System.out.print(" ");
+        }
+        System.out.println("***");
+        System.out.print("              ");
+        for (int j=0; j<(this.message.length()-5); j++){
+            System.out.print(" ");
+        }
+        System.out.println("**");
         
     }
 

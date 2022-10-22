@@ -47,7 +47,7 @@ class Scarecrow {
     public static void main(String[] args) {
 
         
-        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(),new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner(""), new String("Hello!"));
+        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(),new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner(""), new String("Default Greeting"));
 
         // If a message was passed in on the command line, extract and store it
         
