@@ -30,9 +30,9 @@ YES 1 pt: The `Banner` class displays a decorative Banner
 
 ### Level 3 (3 pts)
 
-PART 1 pt: The `Banner` class resizes its display to fit the supplied message
+YES 1 pt: The `Banner` class resizes its display to fit the supplied message
 
-PART 1 pt: The message supplied to the `Banner` constructor is passed in via the command line
+YES 1 pt: The message supplied to the `Banner` constructor is passed in via the command line
 
 YES 1 pt: The program displays a default message if none is supplied.
 
@@ -64,4 +64,4 @@ YES 2 pt: Complies with style guidelines (missing items 1 pt each):
 
 YES 1 pt: All required files included with submission (including completed `rubric.md` file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+YES 1 pt: `reflection.md` contains your reflection on the assignment
